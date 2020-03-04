@@ -2,23 +2,23 @@ import minimist from 'minimist';
 import {version} from './version'
 import {help} from './help'
 import {now} from './now'
-import { forecast} from './forecast'
+import {forecast} from './forecast'
 import {configure} from './configure'
 
-export async function cli(argsArray){
+export const cli = async argsArray => {
     const args = minimist(argsArray.slice(2));
-    
+
     let cmd = args._[0] || 'help';
 
-    if(args.version || args.v){
+    if (args.version || args.v) {
         cmd = 'version';
     }
 
-    if(args.help || args.h){
+    if (args.help || args.h) {
         cmd = 'help';
     }
 
-    switch(cmd){
+    switch (cmd) {
         case 'help':
             help(args);
             break;

@@ -1,7 +1,8 @@
 import axios from 'axios';
 import chalk from 'chalk';
 
-export const validateApiKey = async apiKey => {
+
+export const validateApiKey = apiKey => {
     if (!apiKey || apiKey.length !== 32) {
         console.error(chalk.greenBright(`API Key for OpenWeatherMap has not been set up`));
         console.warn(`Please use ${chalk.yellowBright('weather config --apiKey')} to save your API Key`);
