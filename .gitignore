@@ -1,6 +1,6 @@
-//node modules
+#node modules
 node_modules
 
-//IDE settings
+#IDE settings
 .idea
 .vscode
