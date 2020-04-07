@@ -18,7 +18,7 @@
     "cli-table3": "^0.5.1",
     "conf": "^6.2.0",
     "esm": "^3.2.25",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.3"
   },
   "devDependencies": {
     "babel-jest": "^25.1.0",
